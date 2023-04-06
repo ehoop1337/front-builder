@@ -1,0 +1,26 @@
+@import "variables";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    font-family: $default-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    &-fluid {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
