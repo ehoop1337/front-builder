@@ -12,7 +12,3 @@ const fonts = require('./gulp/fonts');
 exports.clean = series(clean);
 exports.dev = series(clean, fonts, parallel(html, styles, javascript, images, svg), serve);
 exports.build = series(clean, fonts, parallel(html, styles, javascript, images, svg));
-
-// Нужно сделать
-
-// 4. Production
