@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "front-builder",
   "version": "1.0.0",
   "description": "Gulp and Webpack for project build",
   "main": "index.js",
