@@ -12,9 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@fancyapps/ui": "^5.0.17",
+    "jquery": "^3.6.4",
     "normalize.css": "^8.0.1",
-    "slick-slider": "^1.8.2",
-    "swiper": "^9.2.0"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

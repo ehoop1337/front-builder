@@ -1,12 +1,28 @@
 // Libs
+
+// Fancybox
 import { Fancybox } from "@fancyapps/ui";
-// import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+// Jquery
+import $ from 'jquery';
+
+// Slick
+import 'slick-carousel';
+
+// Swiper
+import Swiper from 'swiper';
+
+
+Fancybox.bind('[data-fancybox=""]');
+window.jQuery = window.$ = $;
+window.Swiper = Swiper;
+
 
 // Sections
 import sectionOne from './sections/section-one';
 
 // Loaded
 document.addEventListener('DOMContentLoaded', () => {
-  Fancybox.bind('[data-fancybox=""]');
+
   sectionOne();
 });

@@ -1,7 +1,17 @@
 // Libs
 @import "../../node_modules/normalize.css/normalize";
-//@import "libs/fancybox";
+
+// Fancybox
 @import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox";
+
+// Slick
+@import "../../node_modules/slick-carousel/slick/slick";
+@import "../../node_modules/slick-carousel/slick/slick-theme";
+
+// Swiper
+@import "../../node_modules/swiper/swiper-bundle";
+
+
 
 // Import Variables
 @import "variables";
