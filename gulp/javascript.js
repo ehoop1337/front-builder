@@ -1,9 +1,7 @@
 const gulp = require("gulp");
-const rename = require("gulp-rename");
 const webpack = require('webpack-stream');
 const browserSync = require('browser-sync').create();
-const webpackDevConfig = require('../webpack.config.dev.js');
-const webpackProdConfig = require('../webpack.config.prod.js');
+const webpackConfig = require('../webpack.config.js');
 const yargs = require('yargs/yargs');
 const gulpIf = require('gulp-if');
 
@@ -14,10 +12,10 @@ module.exports = function javascript(cb) {
   return gulp
     .src('./src/js/index.js')
     .pipe(
-      gulpIf(argv.development, webpack(webpackDevConfig))
+      gulpIf(argv.development, webpack(webpackConfig.development))
     )
     .pipe(
-      gulpIf(argv.production, webpack(webpackProdConfig))
+      gulpIf(argv.production, webpack(webpackConfig.production))
     )
     .pipe(gulp.dest('./build/assets/js'))
     .pipe(gulpIf(argv.development, browserSync.stream()));
