@@ -13,10 +13,10 @@ Gulp, Webpack, Twig, Sass
 ## Установка
 
 ```bash
-  mkdir [название проекта]
-  cd [название проекта]
-  git clone https://github.com/ehoop1337/front-builder .
-  npm install
+mkdir [название проекта]
+cd [название проекта]
+git clone https://github.com/ehoop1337/front-builder .
+npm install
 ```
     
 ## Скрипты 
@@ -24,19 +24,19 @@ Gulp, Webpack, Twig, Sass
 Поднятие сервера для разработки:
 
 ```bash
-  npm run start
+npm run start
 ```
 
 Сборка проекта:
 
 ```bash
-  npm run build
+npm run build
 ```
 
 Очищает и удаляет папку build:
 
 ```bash
-  npm run clean
+npm run clean
 ```
 
 
