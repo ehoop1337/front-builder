@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // src/styles/index.scss
 
 ...
-// Загружаем файлы со стилями в папку libs и 
-// подключем от туда
+// Загружаем файлы со стилями в папку src/styles/libs
+// и подключем от туда
 @import "libs/fancybox";
 
 // или сразу из папки node_modules
