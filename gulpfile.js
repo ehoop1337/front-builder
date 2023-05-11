@@ -13,7 +13,3 @@ const videos = require('./gulp/videos');
 exports.clean = series(clean);
 exports.dev = series(clean, fonts, parallel(html, styles, javascript, images, svg, videos), serve);
 exports.build = series(clean, fonts, parallel(html, styles, javascript, images, svg, videos));
-
-// Нужно сделать
-
-// 4. Production
