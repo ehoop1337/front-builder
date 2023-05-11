@@ -47,6 +47,8 @@ npm install --save @fancyapps/ui
 ```
 Подключние скриптов:
 ```javascript
+// src/js/index.js
+
 // Подключаем
 import { Fancybox } from "@fancyapps/ui";
 ...
@@ -58,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 Подключение стилей:
 ```scss
+// src/styles/index.scss
+
 ...
 // Загружаем файлы в папку libs и подключем от туда
 @import "libs/fancybox";
