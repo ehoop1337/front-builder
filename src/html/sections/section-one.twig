@@ -1,0 +1,10 @@
+{% extends "../default/section.twig" %}
+
+{% set section_name = 'one' %}
+{% set section_is_fluid = false %}
+
+{% block section_inner %}
+    <p>This is HTML from section-one.twig</p>
+    <button data-fancybox data-src="#popup-test">Open fancybox</button>
+{% endblock %}
+

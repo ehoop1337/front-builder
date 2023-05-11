@@ -11,13 +11,11 @@ const argv = yargs(hideBin(process.argv)).argv;
 
 module.exports = function html(cb) {
     return gulp.src('./src/html/*.twig')
-      .pipe(twig({
-        data: {
-          title: 'Title page',
-        }
-      }))
-      .pipe(gulpIf(argv.development, replace(/@img\//g, 'assets/images/')))
-      .pipe(gulpIf(argv.production, replace(/@img\//g, '/assets/images/')))
+      .pipe(twig())
+      .pipe(replace(/@img\//g, 'assets/images/'))
+      .pipe(replace(/@video\//g, 'assets/videos/'))
+      .pipe(replace(/@js\//g, 'assets/js/'))
+      .pipe(replace(/@css\//g, 'assets/css/'))
       .pipe(replace(/\.(jpg|jpeg|png)"/g, '.webp"'))
       .pipe(prettyHtml({indent_size: 4}))
       .pipe(gulp.dest('./build/'))

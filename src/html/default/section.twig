@@ -1,7 +1,7 @@
 <div class="section{% if section_name %} section-{{ section_name }}{% endif %}">
-    <div class="container{% if is_fluid == true %}-fluid{% endif %}">
+    <div class="container{% if section_is_fluid == true %}-fluid{% endif %}">
         <div class="{% if section_name %}section-{{ section_name }}__inner{% else %}section__inner{% endif %}">
-            {% block section %}{% endblock %}
+            {% block section_inner %}{% endblock %}
         </div>
     </div>
 </div>

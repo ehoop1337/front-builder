@@ -1,5 +1,7 @@
-// Normalize
+// Libs
 @import "../../node_modules/normalize.css/normalize";
+//@import "libs/fancybox";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox";
 
 // Import Variables
 @import "variables";
@@ -13,8 +15,13 @@
 @include font-face('Roboto', 'Roboto-Regular', 400);
 @include font-face('Roboto', 'Roboto-Italic', 400, italic);
 
-// Import Default
+// Common
 @import "default";
 
-// Import Custom sections
-@import "sections/section-1";
+// Sections
+@import "sections/section-one";
+
+
+video {
+  max-width: 500px;
+}

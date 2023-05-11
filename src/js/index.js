@@ -1,34 +1,12 @@
 // Libs
-import Swiper from "swiper";
-import 'swiper/css';
+import { Fancybox } from "@fancyapps/ui";
+// import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 // Sections
-import section1 from './sections/section1';
+import sectionOne from './sections/section-one';
 
-
-
+// Loaded
 document.addEventListener('DOMContentLoaded', () => {
-  section1();
-
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+  Fancybox.bind('[data-fancybox=""]');
+  sectionOne();
 });

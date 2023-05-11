@@ -6,13 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="description"/>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+    <title>{% if title %} {{ title }} {% else %} Title {% endif %}</title>
+    <link rel="stylesheet" href="@css/styles.css" type="text/css">
 </head>
-<body class="page">
-    <div class="page__wrapper">
-        {% block page %}{% endblock %}
+<body>
+    <div class="wrapper">
+        {% block wrapper %}{% endblock %}
     </div>
-    <script src="/assets/js/scripts.js"></script>
+    <div class="popups">
+        {% block popups %}{% endblock %}
+    </div>
+    <script src="@js/scripts.js"></script>
 </body>
 </html>

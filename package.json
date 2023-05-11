@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "clean": "gulp clean",
-    "dev": "gulp dev --development",
+    "start": "gulp dev --development",
     "build": "gulp build --production"
   },
   "author": "Ruslan Sayfutdinov",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/ui": "^5.0.17",
     "normalize.css": "^8.0.1",
+    "slick-slider": "^1.8.2",
     "swiper": "^9.2.0"
   },
   "devDependencies": {

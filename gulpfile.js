@@ -8,10 +8,11 @@ const javascript = require('./gulp/javascript');
 const images = require('./gulp/images');
 const svg = require('./gulp/svg');
 const fonts = require('./gulp/fonts');
+const videos = require('./gulp/videos');
 
 exports.clean = series(clean);
-exports.dev = series(clean, fonts, parallel(html, styles, javascript, images, svg), serve);
-exports.build = series(clean, fonts, parallel(html, styles, javascript, images, svg));
+exports.dev = series(clean, fonts, parallel(html, styles, javascript, images, svg, videos), serve);
+exports.build = series(clean, fonts, parallel(html, styles, javascript, images, svg, videos));
 
 // Нужно сделать
 

@@ -1,0 +1,5 @@
+<div class="popup" {% if popup_name %} id="popup-{{ popup_name }}" {% endif %} style="display: none;">
+    <div class="popup__content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
