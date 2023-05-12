@@ -1,4 +1,6 @@
 // Libs
+
+// Normalize
 @import "../../node_modules/normalize.css/normalize";
 
 // Fancybox
@@ -6,7 +8,6 @@
 
 // Slick
 @import "../../node_modules/slick-carousel/slick/slick";
-@import "../../node_modules/slick-carousel/slick/slick-theme";
 
 // Swiper
 @import "../../node_modules/swiper/swiper-bundle";
@@ -30,8 +31,3 @@
 
 // Sections
 @import "sections/section-one";
-
-
-video {
-  max-width: 500px;
-}

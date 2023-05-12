@@ -13,9 +13,11 @@ import 'slick-carousel';
 import Swiper from 'swiper';
 
 
+
 Fancybox.bind('[data-fancybox=""]');
 window.jQuery = window.$ = $;
 window.Swiper = Swiper;
+
 
 
 // Sections

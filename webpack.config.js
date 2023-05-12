@@ -40,10 +40,6 @@ module.exports = {
           ],
           loader: 'babel-loader',
         },
-        {
-          test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-          type: 'asset/resource',
-        },
       ],
     },
   },
