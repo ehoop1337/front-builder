@@ -27,7 +27,7 @@ npm install
 npm run start
 ```
 
-Сборка проекта:
+Сборка проекта с флагом production:
 
 ```bash
 npm run build
