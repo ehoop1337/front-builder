@@ -1,9 +1,10 @@
 @mixin calculate(
     $property,
-    $min,
-    $max,
+    $min-value,
+    $max-value,
+    $postfix,
     $min-window-width,
     $max-window-width: 1920
 ) {
-    #{$property}: calc( #{$min + "px"} + (#{$max} - #{$min}) * ((100vw - #{$min-window-width + "px"}) / (#{$max-window-width} - #{$min-window-width})) );
+    #{$property}: calc( #{$min-value + $postfix} + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-window-width + 'px'}) / (#{$max-window-width} - #{$min-window-width})) );
 }
